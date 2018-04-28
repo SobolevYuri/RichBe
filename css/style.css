@@ -1547,15 +1547,13 @@ div.hide-request{
             font-size: 23px;
         }
         div.bottom-right-angle .bottom-right {
-            width: 686px;
-            height: 367px;
+            width: 745px;
         }
         section.about-school h3 {
-            font-size: 23px;
-            width:122px;
+            font-size: 32px;
         }
         section.about-school ul {
-            font-size: 13px;
+            font-size: 16px;
         }
         section.about-school .inner-wrap {
             padding-left: 0;
@@ -1570,9 +1568,9 @@ div.hide-request{
             right: 85px;
             background-size: 887px;
         }
-        section.request .inner-wrap {
-            bottom: -4px;
-        }   
+        section.your-result .inner-wrap {
+            height: 65px;
+        }    
         section.your-result h3 {
             padding-top: 22px;    
             font-size: 21px;
@@ -1580,8 +1578,8 @@ div.hide-request{
             display: inline-block;
         }
         section.about-school .purposes h3 {
-            width: 146px;
-            font-size: 21px;
+            width: 174px;
+            font-size: 24px;
         }
         section.about-school .inner-wrap {
             padding-left: 0;
@@ -1600,32 +1598,20 @@ div.hide-request{
             transform: scale(0.9);
         }
         section.our-school-represent h1 {
-            font-size: 37px;
+            font-size: 42px;
         }
         section.our-school-represent h3 {
-            margin-top: -16px;
-            width: 434px;
-            font-size: 12px;
+            margin-top: -12px;
+            width: 543px;
+            font-size: 15px;
         }
         section.our-school-represent p.our-school-text {
             margin-top: 23px;
-            width: 349px;
-            font-size: 13px;
+            width: 434px;
+            font-size: 16px;
         }
         section.about-school h3 {
             font-size: 27px;
-        }
-        aside.banners {
-            top: -54px;
-            right: 52px;
-            transform: scale(0.9);
-        }
-        section.your-result .inner-wrap {
-            margin-top: 2px;
-            height:59px;
-        }
-        ul.socials li {
-            transform: scale(0.9) translateX(-30px) translateY(-58px);
         }
     }
 
