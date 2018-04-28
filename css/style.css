@@ -46,10 +46,12 @@ div.wrapper .wrap-head{
     margin: 0 auto;
     height: 730px;
 }
-aside.banners{
-    position: relative;
-    width:300px;
-    height:710px;
+aside.banners {
+    position: absolute;
+    width: 300px;
+    height: 710px;
+    top: -23px;
+    right: 26px;
 }
 div.wrapper .guarant{
     position: relative;
@@ -406,7 +408,7 @@ section.your-result h3 {
 }
 section.request .inner-wrap{
     margin-top: 30px;
-    padding-left: 107px;
+   /* padding-left: 107px;*/
     position: relative;
     z-index:12;
 }
@@ -695,18 +697,6 @@ div.request-content button {
     top: 1px;
     padding: 3px;
 }
-/*.close-popup{
-    width: 33px;
-    height: 33px;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    background: url(../images/closet.png) no-repeat;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
-    z-index: 80;
-}*/
 @media screen and (max-width: 1921px){
     div.wrapper .guarant {
         left: 73px;
@@ -893,7 +883,7 @@ div.hide-request{
         }
         section.your-result .inner-wrap {
             height: 92px;
-            right: 66px;
+            /*right: 66px;*/
         }
         header .inner-wrap {
             width: 290px;
@@ -943,7 +933,7 @@ div.hide-request{
         }
         aside.banners .want-banner,
          aside.banners .selection-banner {
-            width: 183px;
+            width: 186px;
         }
         aside .want-banner {
             height: 297px;
@@ -1304,7 +1294,7 @@ div.hide-request{
         }
         section.your-result .inner-wrap {
             height: 86px;
-            right: 106px;
+            /*right: 106px;*/
         }
         section.your-result h3 {
             padding-top: 27px;
@@ -1409,7 +1399,7 @@ div.hide-request{
         right: 11px;
     }
     section.your-result .inner-wrap {
-        right: 54px;
+        /*right: 54px;*/
     }
 }
     @media screen and (max-width:1305px){
@@ -1466,6 +1456,12 @@ div.hide-request{
             width: 784px;
         }
     }
+    @media screen and (max-width:1244px){
+ aside.banners {
+        width: 261px;
+    }
+    }
+   
     @media screen and (max-width:1215px){
         .wrap-head div.guarant {
             background-size: 265px;
@@ -1495,7 +1491,7 @@ div.hide-request{
             max-width: 1156px;
         }
     }
-    @media screen and (max-width:1195px){
+   @media screen and (max-width:1195px){
         section.request span {
             font-size: 25px;
         }
@@ -1551,16 +1547,15 @@ div.hide-request{
             font-size: 23px;
         }
         div.bottom-right-angle .bottom-right {
-            width: 745px;
+            width: 686px;
+            height: 367px;
         }
         section.about-school h3 {
-            font-size: 32px;
+            font-size: 23px;
+            width:122px;
         }
         section.about-school ul {
-            font-size: 16px;
-        }
-        aside.banners {
-            left: 50px;
+            font-size: 13px;
         }
         section.about-school .inner-wrap {
             padding-left: 0;
@@ -1572,19 +1567,21 @@ div.hide-request{
             bottom: -20px;
         }
         section.your-result .inner-wrap {
-            right: 54px;
+            right: 85px;
             background-size: 887px;
         }
-        section.your-result .inner-wrap {
-            height: 65px;
-        }    
+        section.request .inner-wrap {
+            bottom: -4px;
+        }   
         section.your-result h3 {
             padding-top: 22px;    
             font-size: 21px;
+            right: -285px;
+            display: inline-block;
         }
         section.about-school .purposes h3 {
-            width: 174px;
-            font-size: 24px;
+            width: 146px;
+            font-size: 21px;
         }
         section.about-school .inner-wrap {
             padding-left: 0;
@@ -1603,26 +1600,38 @@ div.hide-request{
             transform: scale(0.9);
         }
         section.our-school-represent h1 {
-            font-size: 42px;
+            font-size: 37px;
         }
         section.our-school-represent h3 {
-            margin-top: -12px;
-            width: 543px;
-            font-size: 15px;
+            margin-top: -16px;
+            width: 434px;
+            font-size: 12px;
         }
         section.our-school-represent p.our-school-text {
             margin-top: 23px;
-            width: 434px;
-            font-size: 16px;
+            width: 349px;
+            font-size: 13px;
         }
         section.about-school h3 {
             font-size: 27px;
         }
-        section.your-result h3 {
-            right: -79px;
+        aside.banners {
+            top: -54px;
+            right: 52px;
+            transform: scale(0.9);
+        }
+        section.your-result .inner-wrap {
+            margin-top: 2px;
+            height:59px;
+        }
+        ul.socials li {
+            transform: scale(0.9) translateX(-30px) translateY(-58px);
         }
     }
 
+
+
+    
 div.dark-bg-popup{
     width:100%;
 height:100%;
@@ -1681,7 +1690,6 @@ div.popup-thanks .close-popup:after {
 button.disabled{
     opacity:0.5;
     cursor: default;
-    /*pointer-events: none;*/
 }
 div.confid-popup {
     position: fixed;
@@ -1758,4 +1766,11 @@ div.dark-bg-confid{
     }
     .incorrect-email{
         border:3px solid red;
+    }
+
+    /*section.request {
+        overflow: hidden;
+    }*/
+    section.request form {
+        display: inline-block;
     }
